@@ -1,0 +1,19 @@
+{
+    "name": "tg-monobank-euro-usd",
+    "version": "1.0.0",
+    "main": "index.js",
+    "license": "MIT",
+    "scripts": {
+        "serve": "nodemon src/index.js",
+        "docker:up": "docker compose up"
+    },
+    "dependencies": {
+        "axios": "^0.27.2",
+        "dotenv": "^16.0.2",
+        "express": "^4.18.1",
+        "node-telegram-bot-api": "^0.59.0"
+    },
+    "devDependencies": {
+        "nodemon": "^2.0.20"
+    }
+}
