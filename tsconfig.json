@@ -1,0 +1,25 @@
+{
+    "compilerOptions": {
+        /* Language and Environment */
+        "target": "es2022",
+        "lib": ["ES2022"],
+        "moduleDetection": "auto" /* Control what method is used to detect module-format JS files. */,
+        "allowJs": true /* Allow JavaScript files to be a part of your program. Use the 'checkJS' option to get errors from these files. */,
+        "checkJs": true /* Enable error reporting in type-checked JavaScript files. */,
+        "esModuleInterop": true,
+        "allowSyntheticDefaultImports": true,
+        "forceConsistentCasingInFileNames": true,
+        "module": "ESNext",
+        "moduleResolution": "Node",
+        "resolveJsonModule": true,
+        "isolatedModules": true,
+        "noEmit": true,
+        "strict": true /* Enable all strict type-checking options. */,
+        "noImplicitAny": true /* Enable error reporting for expressions and declarations with an implied 'any' type. */,
+        "skipLibCheck": true /* Skip type checking all .d.ts files. */
+    },
+    "ts-node": {
+        "esm": true,
+        "experimentalSpecifierResolution": "node"
+    }
+}

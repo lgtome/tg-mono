@@ -1,4 +1,10 @@
-function getCurrentCurrencies(currencies) {
+interface Currency {
+    currencyCodeA: number
+    currencyCodeB: number
+    rateBuy: string
+}
+
+function getCurrentCurrencies(currencies: Currency[]) {
     const CODES = [
         { currencyCodeA: 840, currencyCodeB: 980 },
         { currencyCodeA: 978, currencyCodeB: 980 },
@@ -18,4 +24,4 @@ function getCurrentCurrencies(currencies) {
     )
 }
 
-module.exports = { getCurrentCurrencies }
+export { getCurrentCurrencies }
