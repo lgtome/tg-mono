@@ -1,4 +1,7 @@
 version: '3.8'
 services:
     bot:
+        network_mode: 'host'
         build: .
+        environment:
+            BOT_API_KEY: $API_KEY

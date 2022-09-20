@@ -1,5 +1,6 @@
 process.env.NTBA_FIX_319 = '1'
 import { config } from 'dotenv'
+config({ path: '.env.local' })
 config()
 import TelegramBot from 'node-telegram-bot-api'
 import express from 'express'
@@ -11,6 +12,8 @@ const app = express()
 const PORT = 4002
 const TOKEN = process.env.BOT_API_KEY || ''
 const TIME = transformTime(sumUpTime(process.env.TIME))
+
+console.log('Token: ', TOKEN)
 
 const bot = new TelegramBot(TOKEN, { polling: true })
 
